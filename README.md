@@ -1,4 +1,4 @@
-==Smile
+== Smile
 
 Every mile creates a smile. Join our mile-high donors club. We verify recipents (hopefully) using Amnesty International Database. 
 

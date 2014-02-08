@@ -5,7 +5,8 @@ Smile::Application.routes.draw do
   root "pages#home"
   get 'match' => 'pages#match'
   get 'about' => 'pages#about'
-
+  get 'login' => 'pages#login'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

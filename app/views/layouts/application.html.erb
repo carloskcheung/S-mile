@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Smile</title>
+  <title>S'MILE</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container page_container">
+    <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+    <% end %>
 
-<%= yield %>
+  	<%= render 'layouts/header' %>
+		
+	  <%= yield %>
+  	
+  	<%= render 'layouts/footer' %>
+	</div>
 
 </body>
 </html>

@@ -77,4 +77,8 @@ Smile::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Devise Default URLs
+  config.action_mailer.default_url_options = { :host => 'http://XXX.herokuapp.com/' }
+
 end

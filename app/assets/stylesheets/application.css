@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+footer {
+	padding: 20px;
+}
+
+.page_container {
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+.match_container {
+	text-align: center;
+}
+
+.about_container {
+	margin-left: 20px;
+}

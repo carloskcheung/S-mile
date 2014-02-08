@@ -10,8 +10,8 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem "validates_phone_number", "~> 2.0.1"
 gem 'twilio-ruby'
 gem 'protected_attributes'
-gem 'simple_form'
 gem 'devise'
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

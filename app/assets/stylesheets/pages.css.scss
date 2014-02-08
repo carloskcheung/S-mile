@@ -1,0 +1,88 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background:#fcfbf9;
+}
+.splash {
+  background: transparent image-url('washdc.jpg') no-repeat top left;
+  background-size:cover;
+  display:table;
+  position:relative;
+  width:100%;
+  height:100%;
+  .inner {
+    display:table-cell;
+    vertical-align: middle;
+    .logo {
+      // text-align:center;
+    }
+  }
+  h1, h2, h3 {
+    color:#fff;
+    text-shadow:-4px 4px 20px #000;
+    font-family: 'Arvo', sans-serif;
+    font-weight:700;
+    float: right;
+  }
+  h1 {
+    font-size:48px;
+  }
+  h2 {
+    font-size:28px;
+    line-height:1.5em;
+  }
+}
+.section {
+  padding:100px 0;
+  h1 {
+    text-align:center;
+    color:#2c3e50;
+    font-family: 'Arvo', sans-serif;
+    font-weight:700;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;  
+    font-size:27.5px;
+  }
+  p, li {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size:16px;
+    line-height:20px;
+  }
+  img.featured-logo {
+    height:75px;
+    width:auto;
+  }
+}
+
+.green-section {
+  background:#2c3e50;
+  color:#fff;
+  min-height:400px;
+  h1 {
+    color:#fff;
+  }
+  h2 {
+    color:#fff;
+  }
+  .jumbotron {
+    background-color:#69a556;
+  }
+  a {
+    color:#fff;
+  }
+}
+.footer {
+  min-height:30px;
+  padding:20px 0;
+  p {
+    line-height:30px;  
+  }
+}
+#dashboard {
+  padding:0 20px;
+}

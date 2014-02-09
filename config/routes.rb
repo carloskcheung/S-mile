@@ -1,4 +1,5 @@
 Smile::Application.routes.draw do
+  get 'index' => "amnests/index"
   resources :miles
 
   devise_for :amnests

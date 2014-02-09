@@ -48,7 +48,13 @@
     <div class="col-lg-4">
       <h2>Step 2: Matching System </h2>
       <p> We will contact you and do an introduction to match you with qualifed individuals. It is in the discreation of individuals to coordinate exact details for privacy purposes </p>
-      <p><%= link_to "S'MILE Now", matching_path, class: "btn btn-default" %></p>
+      <% if donor_signed_in? %>
+        <p><%= link_to "S'MILE Now", matching_path, class: "btn btn-default" %></p>
+        <% elsif amnest_signed_in?%>
+        <p><%= link_to "S'MILE Now", matching_path, class: "btn btn-default" %></p>
+        <% else %>
+          <p><%= link_to "S'MILE Now", login_path, class: "btn btn-default" %></p>
+      <% end %> 
    </div>
     <div class="col-lg-4">
       <h2>Step 3: Flight </h2>

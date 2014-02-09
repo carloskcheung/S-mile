@@ -3,9 +3,15 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
   <%= f.error_notification %>
 
-  <%= f.input :email %>
-  <%= f.input :password %>
-  <%= f.input :password_confirmation %>
+<ul class="form_style">
+  <%= f.input :name, label_html:  { class: 'form_padding'} %>
+  <%= f.input :email, label_html: { class: 'form_padding' }  %>
+  <%= f.input :password, label_html: { class: 'form_padding' }  %>
+  <%= f.input :password_confirmation, label_html: { class: 'form_padding'} %>
+  <%= f.input :story, label_html:  { class: 'form_padding'} %>
+  <%= f.input :airline, label_html:  { class: 'form_padding'} %>
+  <%= f.input :rewards, label_html:  { class: 'form_padding'} %>
+</ul>
 
   <div class="form-actions">
     <%= f.submit "Sign up", class: "btn btn-primary" %>

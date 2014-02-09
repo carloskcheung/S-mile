@@ -12,6 +12,7 @@ gem 'twilio-ruby'
 gem 'protected_attributes'
 gem 'devise'
 gem 'simple_form'
+gem 'd3_rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

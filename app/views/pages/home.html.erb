@@ -40,20 +40,23 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <h2>Step 1: Verify Miles </h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#"> Calculate S'MILEs &raquo;</a></p>
+      <h2>Step 1: List Miles </h2>
+      <p> Currently we allow people to list how many miles they have and be contacted by people in need of flights. In the near future, we will convert your points to miles for you. </p>
+      <p><%= link_to "List S'MILEs", miles_path, class: "btn btn-default" %></p>
+      
     </div>
     <div class="col-lg-4">
       <h2>Step 2: Matching System </h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#"> S'MILE Now &raquo;</a></p>
+      <p> We will contact you and do an introduction to match you with qualifed individuals. It is in the discreation of individuals to coordinate exact details for privacy purposes </p>
+      <p><%= link_to "S'MILE Now", matching_path, class: "btn btn-default" %></p>
    </div>
     <div class="col-lg-4">
-      <h2>Step 3: Confirm Flight </h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-default" href="#"> S'MILE Flight &raquo;</a></p>
+      <h2>Step 3: Flight </h2>
+      <p> We visualize on a map the people we help on a day-to-day basis </p>
+      <p><%= link_to "S'MILE Flight", flight_path, class: "btn btn-default" %></p>
     </div>
   </div>
   
-</div> <!-- /container -->       
+</div> <!-- /container -->  
+
+     <!-- a lot of security issues need to be addressed -->

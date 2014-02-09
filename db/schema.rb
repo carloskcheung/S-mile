@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208082453) do
+ActiveRecord::Schema.define(version: 20140209075016) do
 
   create_table "amnests", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(version: 20140208082453) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.text     "story"
+    t.string   "location_from"
+    t.string   "location_to"
+    t.string   "birthday"
+    t.string   "dates"
   end
 
   add_index "amnests", ["email"], name: "index_amnests_on_email", unique: true
@@ -44,9 +51,21 @@ ActiveRecord::Schema.define(version: 20140208082453) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.text     "story"
+    t.string   "airline"
+    t.string   "rewards"
   end
 
   add_index "donors", ["email"], name: "index_donors_on_email", unique: true
   add_index "donors", ["reset_password_token"], name: "index_donors_on_reset_password_token", unique: true
+
+  create_table "miles", force: true do |t|
+    t.string   "airline"
+    t.string   "rewards"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "email"
+  end
 
 end

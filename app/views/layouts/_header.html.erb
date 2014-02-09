@@ -14,10 +14,18 @@
         <li><%= link_to "Home", root_path %></li>
         <li class="active"><%= link_to "Match", match_path %></li>
         <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Login", login_path %></li>
-      </ul>
-      
-
+        <% if donor_signed_in? %>
+          <li><%= link_to 'Edit profile', edit_donor_registration_path %></li>
+          <li><%= link_to "Logout", destroy_donor_session_path, method: :delete %> </li>
+        <% elsif amnest_signed_in?%>
+          <li><%= link_to 'Edit profile', edit_amnest_registration_path %></li>
+          <li><%= link_to "Logout", destroy_amnest_session_path, method: :delete %> </li>
+        <% else %>
+          <li> <%= link_to "Donor Login", new_donor_session_path %> </li>
+          <li> <%= link_to "Amnest Login", new_amnest_registration_path %> </li>
+        <% end %>
+  
+      </ul> 
 
     </div>
   </div>

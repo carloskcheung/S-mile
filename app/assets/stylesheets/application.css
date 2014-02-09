@@ -28,3 +28,11 @@ footer {
 .about_container {
 	margin-left: 20px;
 }
+
+.form_padding{
+	padding: 20px;
+}
+
+.form_style {
+	list-style: none;
+}

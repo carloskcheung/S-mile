@@ -1,4 +1,6 @@
 Smile::Application.routes.draw do
+  resources :miles
+
   devise_for :amnests
   devise_for :donors
 
@@ -6,7 +8,10 @@ Smile::Application.routes.draw do
   get 'match' => 'pages#match'
   get 'about' => 'pages#about'
   get 'login' => 'pages#login'
-  
+  get 'airlines' => 'pages#airlines'
+  get 'matching' => 'pages#matching'
+  get 'flight' => 'pages#flight'
+  get 'receive'=> 'amnests#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

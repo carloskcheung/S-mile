@@ -48,6 +48,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    d3_rails (3.4.1)
+      railties (>= 3.1.0)
     devise (3.2.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -179,6 +181,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.9)
   capybara (= 2.1.0)
   coffee-rails (= 4.0.0)
+  d3_rails
   devise
   factory_girl_rails (= 4.2.1)
   faker (= 1.1.2)
